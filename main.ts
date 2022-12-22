@@ -2,8 +2,8 @@ input.onButtonPressed(Button.A, function () {
 	
 })
 let timer = randint(20, 35)
-basic.showIcon(IconNames.SmallDiamond)
 while (timer > 0) {
+    basic.showIcon(IconNames.SmallDiamond)
     timer += -1
     basic.pause(1500)
     music.playSoundEffect(music.createSoundEffect(
@@ -15,7 +15,8 @@ while (timer > 0) {
     50,
     SoundExpressionEffect.None,
     InterpolationCurve.Curve
-    ), SoundExpressionPlayMode.UntilDone)
+    ), SoundExpressionPlayMode.InBackground)
+    basic.showIcon(IconNames.SmallSquare)
 }
 music.playSoundEffect(music.createSoundEffect(
 WaveShape.Noise,
