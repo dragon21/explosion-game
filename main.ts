@@ -10,6 +10,7 @@ basic.forever(function () {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 500, 499, 255, 0, 1500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.InBackground)
         for (let index = 0; index < 5; index++) {
             basic.showIcon(IconNames.Chessboard)
+            basic.pause(100)
             basic.showLeds(`
                 # . # . #
                 . # . # .
